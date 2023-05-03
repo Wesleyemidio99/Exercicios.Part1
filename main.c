@@ -28,6 +28,19 @@ void exercicioDois(){
 }
 
 
+void exercicioTres(){
+    int f;
+    float celsius;
+
+    printf("\nDigite um determinado grau em Fahrenheit (32-212):\n");
+    scanf("%d",&f);
+
+    celsius = 5.0/9.0 * (f-32.0);
+
+    printf("O valor de %d fahrenheit para celsius = %.2f",f,celsius);
+
+}
+
 void main() {
     int resposta;
 
@@ -47,6 +60,9 @@ void main() {
             exercicioDois();
             break;
 
+        case 3 :
+            exercicioTres();
+            break;
     }
 
 }
