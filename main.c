@@ -61,6 +61,22 @@ void exercicioQuatro(){
 
 }
 
+void exercicioCinco(){
+    int v,vo,a,t;
+
+    system("cls");
+    printf("Digite a velocidade inical:");
+    scanf("%d",&vo);
+    printf("Digite a aceleracao:");
+    scanf("%d",&a);
+    printf("Digite o tempo:");
+    scanf("%d",&t);
+
+    v = vo + (a*t);
+
+    printf("A velocidade da particula = %d",v);
+}
+
 void main() {
     int resposta;
 
@@ -69,6 +85,7 @@ void main() {
     printf("2 - Escrever um programa que execute e imprima o resultado das operacoes de adicao, subtracao, divisao e produto entre dois numero decimais inicializados com 20 e 3.\n");
     printf("3 - Escrever um programa que permita ao usuario digitar um valor referente a um determinado grau Fahrenheit (32-212). Calcule a conversao deste grau em Celsius.\n");
     printf("4 - Escrever um programa que permite calcular o espaco percorrido por uma velocidade constante. \n");
+    printf("5 - Sabendo que a aceleracao de uma particula e constante, escreva um programa que permita calcular a velocidade. \n");
     printf("Digite qual execercicio deseja:");
     scanf("%d",&resposta);
 
@@ -88,6 +105,10 @@ void main() {
 
         case 4:
             exercicioQuatro();
+            break;
+
+        case 5:
+            exercicioCinco();
             break;
     }
 
