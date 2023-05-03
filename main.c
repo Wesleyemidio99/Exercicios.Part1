@@ -12,19 +12,39 @@ void exercicioUm(){
 }
 
 
+void exercicioDois(){
+    int a = 20,b = 3,adicao,subtracao,produto;
+    float divisao;
+
+    adicao = a+b;
+    subtracao = a-b;
+    produto = a*b;
+    divisao = a/b;
+
+    printf("A Soma de %d e %d = %d\n",a,b,adicao);
+    printf("A Subtracao de %d e %d = %d\n",a,b,subtracao);
+    printf("A divisao de %d e %d = %f.5\n",a,b,divisao);
+    printf("O produto de %d e %d = %d\n",a,b,produto);
+}
+
 
 void main() {
     int resposta;
 
     printf("Exercicios 1 ate 50 (part1)\n\n");
     printf("1 - Escrever um programa que permita ao usuario digitar tres números inteiros e os imprima:\n");
-    printf("\nDigite qual execercicio deseja:");
+    printf("2 - Escrever um programa que execute e imprima o resultado das operacoes de adicao, subtracao, divisao e produto entre dois numero decimais inicializados com 20 e 3.\n");
+    printf("Digite qual execercicio deseja:");
     scanf("%d",&resposta);
 
     switch(resposta){
 
         case 1:
             exercicioUm();
+            break;
+
+        case 2:
+            exercicioDois();
             break;
 
     }
